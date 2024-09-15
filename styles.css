@@ -1,0 +1,161 @@
+/* Global styles for the body and elements */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Logo */
+.logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#company-logo {
+    width: 200px; /* Increased size for bigger logo */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-text {
+    color: white;
+    margin-top: 10px;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header .logo p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#hero {
+    background-color: #ff9900;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#about, #products, #brands, #contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+    margin: 20px 0;
+}
+
+#products .product-list, #brands .brands-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item, .brand-item {
+    background-color: #eaeaea;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Product images styling */
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Brand logos */
+.brand-item img {
+    width: 100px;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    #hero {
+        padding: 50px 20px;
+        font-size: 18px;
+    }
+
+    #products .product-list, #brands .brands-list {
+        display: block;
+    }
+
+    .product-item, .brand-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+/* For very small screens (mobile phones) */
+@media only screen and (max-width: 480px) {
+    header .logo h1 {
+        font-size: 28px;
+    }
+
+    header .logo p {
+        font-size: 14px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    #hero {
+        padding: 30px 10px;
+    }
+
+    .product-item, .brand-item {
+        padding: 15px;
+    }
+}
